@@ -1,14 +1,24 @@
 body {
-    min-height: 100vh;
     display: flex;
-    align-items: center;
     justify-content: center;
-    background-color: #f0f0f0;
-    font-family: Arial, sans-serif;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
 }
 
-h1 {
-    font-size: 3rem;
-    color: #222;
-    text-align: center;
+#container {
+    display: flex;
+    gap: 20px;
+}
+
+.cercle {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    animation: rotation 10s infinite linear;
+}
+
+@keyframes rotation {
+    from { transform: rotate(0deg); }
+    to   { transform: rotate(360deg); }
 }
